@@ -75,6 +75,12 @@ rescue Savon::SOAPFault => e
   exit 1
 end
 ignore_fields = [:type, :ns2, :xsi]
-result = response[:query_response][:result][:records].reject{|k,v| ignore_fields.include?(k)}
-STDOUT.puts result.to_json
-
+records = response[:query_response][:result][:records]
+result = []
+if records
+  records = [records] unless records.is_a?(Array)
+  records.each do |record|  
+    result << record.reject{|k,v| ignore_fields.include?(k)}
+  end
+end
+puts result.to_json
