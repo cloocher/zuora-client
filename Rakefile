@@ -5,7 +5,7 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "zuora-client"
-    gem.version = "1.0.1"
+    gem.version = "1.0.2"
     gem.summary = "Zuora Client"
     gem.description = "A client for Zuora"
     gem.email = "gene@ning.com"
