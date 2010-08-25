@@ -14,7 +14,7 @@ begin
         "lib/**/*", "bin/**/*"]
     gem.add_dependency "savon", ">= 0.7.9"
     gem.add_dependency "json_pure", ">= 1.4.6"
-    gem.executables = ['zq']
+    gem.executables = ['zuora-client', 'zc']
     gem.requirements = ["none"]
     gem.bindir = "bin"
   end

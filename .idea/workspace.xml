@@ -3,6 +3,8 @@
   <component name="ChangeListManager" verified="true">
     <list default="true" readonly="true" id="3451b18a-7b96-45cd-895a-b264aa7971a3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Rakefile" afterPath="$PROJECT_DIR$/Rakefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/zq" afterPath="" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="zuora-client.iws" />
@@ -35,15 +37,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zq" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bin/zq">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="43" selection-start="1413" selection-end="1413" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
@@ -65,7 +58,7 @@
       <file leaf-file-name="Rakefile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Rakefile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="20" selection-start="563" selection-end="563" vertical-scroll-proportion="0.1322314">
+            <state line="16" column="42" selection-start="585" selection-end="585" vertical-scroll-proportion="0.1322314">
               <folding />
             </state>
           </provider>
@@ -311,13 +304,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/zq">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="43" selection-start="1413" selection-end="1413" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -334,7 +320,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Rakefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="20" selection-start="563" selection-end="563" vertical-scroll-proportion="0.1322314">
+        <state line="16" column="42" selection-start="585" selection-end="585" vertical-scroll-proportion="0.1322314">
           <folding />
         </state>
       </provider>
