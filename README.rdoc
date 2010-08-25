@@ -7,7 +7,7 @@ Client for Zuora API
     $ sudo gem install zuora-client
 
 == Usage
-   zuora-client -u <username> -p <password> <query>  
+   zuora-client -u <username> -p <password> -e [prod|sandbox] <query>
 
 == Note on Patches/Pull Requests
  

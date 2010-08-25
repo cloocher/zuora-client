@@ -28,16 +28,16 @@ password = nil
 environment = 'prod'
 
 opts = OptionParser.new do |opts|
-  opts.banner = 'Usage: zuora -u <username> -p <password> <query>'
-  opts.on('-u', '--user USER', 'username') { |u| username = u }
+  opts.banner = 'Usage: zuora-client -u <username> -p <password> -e [prod|sandbox] <query>'
+  opts.on('-u', '--user USERNAME', 'username') { |u| username = u }
   opts.on('-p', '--pass PASSWORD', 'password') { |p| password = p }
-  opts.on('-e', '--env ENVIRONMENT', '[prod|sandbox]') { |e| environment = e }
+  opts.on('-e', '--env ENVIRONMENT', '[prod|sandbox] (default: prod)') { |e| environment = e }
   opts.on('-v', '--verbose', 'log harder') { Savon::Request.log = true }
 end
 
 if ARGV.empty?
   puts opts
-  exit 1
+  exit
 end
 
 remainder = opts.parse!(ARGV)

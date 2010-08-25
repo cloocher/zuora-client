@@ -9,7 +9,7 @@ begin
     gem.summary = "Zuora Client"
     gem.description = "A client for Zuora"
     gem.email = "gene@ning.com"
-    gem.homepage = "http://github.com/ning/zuora-client"
+    gem.homepage = "http://github.com/cloocher/zuora-client"
     gem.authors = ["Cloocher"]
     gem.files = FileList["CHANGES", "zuora-client.gemspec", "Rakefile", "README", "VERSION",
         "lib/**/*", "bin/**/*"]
