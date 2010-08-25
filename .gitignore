@@ -17,6 +17,9 @@ tmtags
 coverage
 rdoc
 pkg
-zuora-query.gemspec
+zuora-client.gemspec
+
+##
+.idea
 
 ## PROJECT::SPECIFIC
