@@ -10,10 +10,13 @@ begin
     gem.email = "brianm@ning.com"
     gem.homepage = "http://github.com/ning/zuora-client"
     gem.authors = ["Brian McCallister"]
-#    gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
+    gem.files = FileList["CHANGES", "zuora-client.gemspec", "Rakefile", "README", "VERSION",
+        "lib/**/*", "bin/**/*"]
     gem.add_dependency "savon", ">= 0.7.9"
     gem.add_dependency "json_pure", ">= 1.4.6"
-    gem.executables     =   [ 'zq' ]
+    gem.executables = ['zq']
+    gem.requirements = ["none"]
+    gem.bindir = "bin"
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
