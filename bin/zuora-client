@@ -25,11 +25,13 @@ Savon::Request.log = false
 
 username = nil
 password = nil
+environment = 'prod'
 
 opts = OptionParser.new do |opts|
   opts.banner = 'Usage: zuora -u <username> -p <password> <query>'
   opts.on('-u', '--user USER', 'username') { |u| username = u }
   opts.on('-p', '--pass PASSWORD', 'password') { |p| password = p }
+  opts.on('-e', '--env ENVIRONMENT', '[prod|sandbox]') { |e| environment = e }
   opts.on('-v', '--verbose', 'log harder') { Savon::Request.log = true }
 end
 
@@ -46,7 +48,14 @@ unless username and password
   exit 1
 end
 
-zuora_client = ZuoraClient.new(username, password)
+url = case environment.downcase
+  when 'sandbox'
+    ZuoraClient::SANDBOX_URL
+  else
+    ZuoraClient::PROD_URL
+end
+
+zuora_client = ZuoraClient.new(username, password, url)
 
 result = zuora_client.query(query_string)
 
